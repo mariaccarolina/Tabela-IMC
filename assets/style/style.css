@@ -89,3 +89,11 @@ button {
     }
 
 }
+
+@media screen and (max-width:375px) {
+    .tabela {
+        margin: 10px;
+        height: 80vh;
+    }
+
+}
