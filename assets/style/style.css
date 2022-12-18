@@ -29,6 +29,14 @@ h2 {
     margin-top: 20px;
 }
 
+.title-image{
+    display:flex
+}
+
+.balance{
+    margin: 10px;
+}
+
 .container {
     background-color: var(--primary-color-darker);
     width: 100%;
