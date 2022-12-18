@@ -21,7 +21,7 @@ h1 {
     color: var(--primary-color-font);
 }
 
-h2{
+h2 {
     margin-bottom: 10px;
 }
 
@@ -41,7 +41,6 @@ h2{
 
 .tabela {
     background-color: var(--primary-color);
-    height: 60vh;
     margin: 20px;
     border-radius: 20px;
     display: flex;
@@ -84,9 +83,9 @@ button {
     cursor: pointer;
 }
 
-@media screen and (max-width:420px){
-    .box-info{
+@media screen and (max-width:420px) {
+    .box-info {
         gap: 10px;
     }
-   
+
 }
