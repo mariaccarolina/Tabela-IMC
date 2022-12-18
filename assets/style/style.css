@@ -101,7 +101,27 @@ button {
 @media screen and (max-width:375px) {
     .tabela {
         margin: 10px;
-        height: 60vh;
+        height: 70vh;
+    }
+
+}
+@media screen and (max-width:340px) {
+    .tabela {
+        height: 90vh;
+    }
+
+}
+
+@media screen and (max-width:280px) {
+    h1, h2, p{
+        font-size: 16px;
+    }
+    .tabela {
+        height: 100vh;
+    }
+    .box-info{
+        padding: 10px;
+       
     }
 
 }
