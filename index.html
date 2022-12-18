@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,21 @@
     <link rel="stylesheet" href="./assets/style/style.css">
     <title>IMC</title>
 </head>
+
 <body>
     <section class="container">
         <div class="tabela">
             <h1 class="title">Tabela IMC</h1>
-        <div class="box-info">
-            <div class="informaçoes">
-                <h2>IMC</h2>
-                <p>Menos do que 18,5</p>
-                <p>Entre 18,5 e 24,9</p>
-                <p>Entre 25 e 29,9</p>
-                <p>Entre 30 e 34,9</p>
-                <p>Entre35 e 39,9</p>
-                <p> Mais do que 40</p>
-            </div>
+            <div class="box-info">
+                <div class="informaçoes">
+                    <h2>IMC</h2>
+                    <p>Menos do que 18,5</p>
+                    <p>Entre 18,5 e 24,9</p>
+                    <p>Entre 25 e 29,9</p>
+                    <p>Entre 30 e 34,9</p>
+                    <p>Entre35 e 39,9</p>
+                    <p> Mais do que 40</p>
+                </div>
                 <div class="resultado">
                     <h2>Resultado</h2>
                     <p>Abaixo do peso</p>
@@ -30,20 +32,21 @@
                     <p>Obesidade grau 2</p>
                     <p> Obesidade grau 3</p>
                 </div>
+            </div>
+
+            <form action="" class="box-form">
+                <h1>Calcule seu IMC</h1>
+
+                <label for="meu-peso">Peso</label>
+                <input type="text" id="meu-peso">
+
+                <label for="minha-altura">Altura</label>
+                <input type="text" id="minha-altura">
+                <button>Calcular</button>
+            </form>
         </div>
-
-       <form action="" class="box-form">
-        <h1>Calcule seu IMC</h1>
-        
-        <label for="meu-peso">Peso</label>
-        <input type="text" id="meu-peso"> 
-
-        <label for="minha-altura">Altura</label>
-        <input type="text" id="minha-altura"> 
-        <button>Calcular</button>
-       </form>
-    </div>
     </section>
-   <script src="./assets/script/script.js"></script> 
+    <script src="./assets/script/script.js"></script>
 </body>
+
 </html>

@@ -21,6 +21,10 @@ h1 {
     color: var(--primary-color-font);
 }
 
+h2{
+    margin-bottom: 10px;
+}
+
 .title {
     margin-top: 20px;
 }
