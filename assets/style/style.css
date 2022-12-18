@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+:root {
+    --primary-color: rgb(128, 197, 243);
+    --primary-color-darker: rgb(54, 112, 193);
+    --primary-color-font: rgb(30, 56, 56);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open sans', sans-serif;
+    color: var(--primary-color-font);
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+    color: var(--primary-color-font);
+}
+
+.title {
+    margin-top: 20px;
+}
+
+.container {
+    background-color: var(--primary-color-darker);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+.tabela {
+    background-color: var(--primary-color);
+    height: 60vh;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+.box-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 20px;
+    line-height: 25px;
+}
+
+.box-form {
+    width: 100%;
+    padding: 20px;
+}
+
+label,
+input,
+button {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    height: 30px;
+}
+
+input:focus {
+    outline: 1px solid var(--primary-color-darker);
+}
+
+button {
+    margin-top: 20px;
+    background-color: var(--primary-color-darker);
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+@media screen and (max-width:420px){
+    .box-info{
+        gap: 10px;
+    }
+   
+}
