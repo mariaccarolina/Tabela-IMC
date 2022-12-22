@@ -10,5 +10,9 @@ formulario.addEventListener("submit", function (e) {
 
 function imcResult(msg) {
   const resultado = document.querySelector(".resultadoImc");
-  resultado.innerHTML = msg;
+  resultado.innerHTML = "";
+  const p = document.createElement("p");
+  p.classList.add("resultado-final")
+  p.innerHTML = "Vc vai longe!!";
+  resultado.appendChild(p);
 }

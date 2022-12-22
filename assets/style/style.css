@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
 :root {
-    --primary-color: rgb(128, 197, 243);
-    --primary-color-darker: rgb(54, 112, 193);
-    --primary-color-font: rgb(30, 56, 56);
+    --primary-color-darker: #191919;
+    --primary-color: rgb(115, 159, 131);
+    --primary-color-font: #1c1d1d;
 }
 
 * {
@@ -89,6 +89,15 @@ button {
     border: none;
     color: aliceblue;
     cursor: pointer;
+}
+
+.resultado-final{
+    background-color: var(--primary-color-darker);
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    height: 30px;
+    padding: 5px;
 }
 
 @media screen and (max-width:420px) {
