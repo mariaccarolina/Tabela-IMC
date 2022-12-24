@@ -3,7 +3,7 @@
 :root {
     --primary-color-darker: #191919;
     --primary-color: rgb(225, 228, 227);
-    --primary-color-font: #1c1d1d;
+    --primary-color-font: #070c0c;
 }
 
 * {
@@ -14,8 +14,12 @@
     font-family: 'Open sans', sans-serif;
     color: var(--primary-color-font);
 }
-body{
-    background: var(--primary-color-darker);
+
+body {
+    background-image: url("https://images.pexels.com/photos/4753891/pexels-photo-4753891.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-color: #1c1d1d;
 }
 
 
@@ -47,11 +51,13 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 .tabela {
-    background-color: var(--primary-color);
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 10px rgba(221, 56, 56, 0.25);
+    backdrop-filter: blur(10px);
     border-radius: 30px;
     display: flex;
     align-items: center;
@@ -108,8 +114,9 @@ button {
         background-image: url("https://images.pexels.com/photos/4753891/pexels-photo-4753891.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
         background-size: cover;
         background-position: center;
-        
-        }
+
+    }
+
     .box-info {
         gap: 10px;
     }
@@ -120,6 +127,11 @@ button {
     .tabela {
         margin: 10px;
         height: 70vh;
+        background-color: rgba(255, 255, 255, 0.05);
+        box-shadow: 0 0 10px rgba(221, 56, 56, 0.25);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+
     }
 
 }
