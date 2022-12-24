@@ -1,18 +1,42 @@
 const formulario = document.querySelector(".box-form");
-const pesoRecebido = document.getElementById("meu-peso").value;
-const alturaRecebida = document.getElementById("minha-altura").value;
 
 formulario.addEventListener("submit", function (e) {
   e.preventDefault();
-  console.log("aaaa");
-  imcResult("vai estudar kkkk");
+  const pesoRecebido = e.target.querySelector("#meu-peso");
+  const alturaRecebida = e.target.querySelector("#minha-altura");
+
+  const peso = Number(pesoRecebido.value);
+  const altura = Number(alturaRecebida.value);
+
+  if (!peso) {
+    imcResult("Peso inválido!", false);
+    return;
+  }
+
+  if (!altura) {
+    imcResult("Altura inválida!", false);
+    return;
+  }
+
+  const imc = getImc(peso, altura);
+  console.log(imc);
 });
 
-function imcResult(msg) {
+function getImc(peso, altura) {
+  const imc = peso / altura ** 2;
+  return imc.toFixed(2);
+}
+
+function criarP() {
+  const p = document.createElement("p");
+  return p;
+}
+
+function imcResult(msg, isValid) {
   const resultado = document.querySelector(".resultadoImc");
   resultado.innerHTML = "";
-  const p = document.createElement("p");
-  p.classList.add("resultado-final")
-  p.innerHTML = "Vc vai longe!!";
+
+  const p = criarP();
+  p.innerHTML = msg;
   resultado.appendChild(p);
 }
