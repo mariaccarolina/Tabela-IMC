@@ -22,6 +22,17 @@ formulario.addEventListener("submit", function (e) {
   console.log(imc);
 });
 
+function getValoresImc(imc) {
+  const valor = [
+    "Abaixo do peso",
+    "Peso normal",
+    "Sobrepeso",
+    "Obesidade grau 1",
+    "Obesidade grau 2",
+    "Obesidade grau 3",
+  ];
+}
+
 function getImc(peso, altura) {
   const imc = peso / altura ** 2;
   return imc.toFixed(2);

@@ -2,7 +2,7 @@
 
 :root {
     --primary-color-darker: #191919;
-    --primary-color: rgb(115, 159, 131);
+    --primary-color: rgb(225, 228, 227);
     --primary-color-font: #1c1d1d;
 }
 
@@ -14,6 +14,10 @@
     font-family: 'Open sans', sans-serif;
     color: var(--primary-color-font);
 }
+body{
+    background: var(--primary-color-darker);
+}
+
 
 h1 {
     text-align: center;
@@ -38,23 +42,22 @@ h2 {
 }
 
 .container {
-    background-color: var(--primary-color-darker);
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column
+    flex-direction: column; 
 }
 
 .tabela {
     background-color: var(--primary-color);
-    margin: 20px;
-    border-radius: 20px;
+    border-radius: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column
+    flex-direction: column;
+    box-shadow: rgb(57, 31, 14) 0px 20px 30px -10px;
 }
 
 .box-info {
@@ -91,7 +94,7 @@ button {
     cursor: pointer;
 }
 
-.resultado-final{
+.resultado-final {
     background-color: var(--primary-color-darker);
     color: white;
     text-align: center;
@@ -101,6 +104,12 @@ button {
 }
 
 @media screen and (max-width:420px) {
+    body {
+        background-image: url("https://images.pexels.com/photos/4753891/pexels-photo-4753891.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-size: cover;
+        background-position: center;
+        
+        }
     .box-info {
         gap: 10px;
     }
@@ -114,6 +123,7 @@ button {
     }
 
 }
+
 @media screen and (max-width:340px) {
     .tabela {
         height: 90vh;
@@ -122,15 +132,20 @@ button {
 }
 
 @media screen and (max-width:280px) {
-    h1, h2, p{
+
+    h1,
+    h2,
+    p {
         font-size: 16px;
     }
+
     .tabela {
         height: 100vh;
     }
-    .box-info{
+
+    .box-info {
         padding: 10px;
-       
+
     }
 
 }
