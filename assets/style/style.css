@@ -102,8 +102,8 @@ button {
 
 .resultado-final,
 .resultado-negativo {
-    background-color: var(--primary-color-darker);
-    color: white;
+    background-color: #a4896e;
+    color:rgb(243, 230, 230);
     text-align: center;
     margin-top: 10px;
     height: 30px;

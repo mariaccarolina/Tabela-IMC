@@ -33,9 +33,7 @@ function getValoresImc(imc) {
     "Obesidade grau 2",
     "Obesidade grau 3",
   ];
-  if (imc >= 39.9) {
-    return valor[5];
-  }
+  if (imc >= 39.9) return valor[5];
   if (imc >= 34.9) return valor[4];
   if (imc >= 29.9) return valor[3];
   if (imc >= 24.9) return valor[2];
