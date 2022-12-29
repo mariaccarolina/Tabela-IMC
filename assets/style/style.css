@@ -103,7 +103,7 @@ button {
 .resultado-final,
 .resultado-negativo {
     background-color: #a4896e;
-    color:rgb(243, 230, 230);
+    color:var(--primary-color-font);
     text-align: center;
     margin-top: 10px;
     height: 30px;
