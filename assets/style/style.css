@@ -78,7 +78,9 @@ h2 {
     width: 100%;
     padding: 20px;
 }
-
+input{
+    padding: 10px;
+}
 label,
 input,
 button {
@@ -86,6 +88,8 @@ button {
     width: 100%;
     font-size: 16px;
     height: 30px;
+    border-radius: 10px;
+    border: none;
 }
 
 input:focus {
@@ -108,6 +112,7 @@ button {
     margin-top: 10px;
     height: 30px;
     padding: 5px;
+    border-radius: 10px;
 }
 
 .resultado-negativo {
