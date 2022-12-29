@@ -17,9 +17,9 @@
 
 body {
     background-image: url("https://images.pexels.com/photos/4753891/pexels-photo-4753891.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-   background-position: center;
-   background-repeat: no-repeat;
-   background-color: #1c1d1d;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #1c1d1d;
 }
 
 
@@ -100,13 +100,18 @@ button {
     cursor: pointer;
 }
 
-.resultado-final {
+.resultado-final,
+.resultado-negativo {
     background-color: var(--primary-color-darker);
     color: white;
     text-align: center;
     margin-top: 10px;
     height: 30px;
     padding: 5px;
+}
+
+.resultado-negativo {
+    background-color: rgb(234, 133, 133);
 }
 
 @media screen and (max-width:420px) {

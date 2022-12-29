@@ -19,7 +19,9 @@ formulario.addEventListener("submit", function (e) {
   }
 
   const imc = getImc(peso, altura);
-  console.log(imc);
+  const valoresImc = getValoresImc(imc);
+  const mensagemFinal = `Seu IMC é ${imc} ${valoresImc}.`;
+  imcResult(mensagemFinal, true);
 });
 
 function getValoresImc(imc) {
@@ -31,6 +33,14 @@ function getValoresImc(imc) {
     "Obesidade grau 2",
     "Obesidade grau 3",
   ];
+  if (imc >= 39.9) {
+    return valor[5];
+  }
+  if (imc >= 34.9) return valor[4];
+  if (imc >= 29.9) return valor[3];
+  if (imc >= 24.9) return valor[2];
+  if (imc >= 18.5) return valor[1];
+  if (imc < 18.5) return valor[0];
 }
 
 function getImc(peso, altura) {
@@ -48,6 +58,12 @@ function imcResult(msg, isValid) {
   resultado.innerHTML = "";
 
   const p = criarP();
+
+  if (isValid) {
+    p.classList.add("resultado-final");
+  } else {
+    p.classList.add("resultado-negativo");
+  }
   p.innerHTML = msg;
   resultado.appendChild(p);
 }
